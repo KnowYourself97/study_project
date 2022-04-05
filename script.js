@@ -1,41 +1,19 @@
-"use strict";
-// let number = 5;
-// const leftBorderWidth = 1;
+const numberOfFilms = +prompt('How many films you watched?', '');
 
-// number = 10;
-// console.log(number);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// const obj = {
-//     name: "John",
-//     age: 25,
-//     isMarried: false
-// };
+const a = prompt('one of the last films?', ''),
+    b = prompt('you score from 0 to 10?', ''),
+    c = prompt('one of the last films?', ''),
+    d = prompt('you score from 0 to 10?', '');
 
-// console.log(obj.name);
+personalMovieDB.movies[a] = b; // [] помогают избавиться от багов (прим. кириллица)
+personalMovieDB.movies[c] = d;
 
-// let arr = ["plum.png", "orange.jpeg"];
-// console.log(arr[0]);
-// alert('Hello!');
-
-// const result = confirm('Are you here?');
-// console.log(typeof(result));
-
-// const answers = [];
-
-// // answers[0] = prompt('Name', '');
-// // answers[1] = prompt('Sex', '');
-
-// console.log(typeof(answers));
-
-// const category = 'toys';
-
-// console.log(`https//someurl.com/${category});
-
-// let incr = 10,
-//     decr = 10;
-// ++incr;
-// --decr;
- 
-// console.log(incr);
-// console.log(decr);
-
+console.log(personalMovieDB);
